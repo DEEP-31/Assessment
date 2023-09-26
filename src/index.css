@@ -1,13 +1,338 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.UpperHeader{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.leftheader{
+  display: flex;
+  position: absolute;
+  right: 0px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-right: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fa-facebook {
+  color: rgb(101, 38, 229);
 }
+
+.fa-twitter {
+  color: rgb(71, 161, 203);
+}
+.fa-instagram {
+  color: rgb(197, 41, 41);
+}
+.delivery{
+  cursor: pointer;
+  color: aliceblue;
+}
+.login{
+  cursor: pointer;
+  color: aliceblue;
+  background-color: #000000;
+  outline: none;
+  border: none;
+}
+a{
+  color: #f8f9fa;
+}
+.secondhead{
+   display: flex;
+   flex-wrap: wrap;
+   padding-left: 50px;
+   background-color: black;
+   color: white;
+}
+.inner2head{
+  position: absolute;
+  right: 0px; 
+  padding-right: 60px;
+  background-color: black;
+  color: white;
+  padding-top: 25px;
+}
+.name{
+  font-size: 35px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+hr {
+  width: 95%;
+  height: 1px;
+  margin-top: -17px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #b7d0e2;
+  border: 0 none;
+}
+.navbar{
+  background-color: #000000;
+  color: white;
+}
+.collapse{
+  display: flex;
+  margin-top: -50px;
+  margin-bottom: -20px;
+}
+.nav-item{
+  margin-left: 60px;
+  padding :20px
+}
+#shipping{
+  height: 30px;
+  width: 55px;
+  color: white;
+  background-color: white;
+}
+.banner{
+  height: 560px;
+  opacity: 0.5px;
+  background-color: black;
+  position: relative;
+}
+.nesteddiv{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 320px;
+  background-color: #F07E15;
+  ;
+  margin-top: 160px;
+}
+h2{
+  position: absolute;
+}
+#fresh{
+  width: 689px;
+  margin-left: 270px;
+  font-size: 120px;
+  font-family: Syne;
+  font-size: 135px;
+  font-weight: 800;
+  line-height: 103px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 75px;
+}
+#year{
+  width: 689px;
+  margin-left: 550px;
+  font-size: 120px;
+  font-family: Syne;
+  font-size: 135px;
+  font-weight: 800;
+  line-height: 103px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: transparent;
+  -webkit-text-fill-color: transparent; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 220px;
+}
+#look{
+  width: 689px;
+  margin-left: 350px;
+  font-size: 120px;
+  font-family: Syne;
+  font-size: 135px;
+  font-weight: 800;
+  line-height: 103px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 370px;
+}
+.seemore{
+    margin-left: 100px;
+    color: white;
+    position: absolute;
+    top: 500px;
+}
+.jessica{
+  position: absolute;
+  top:50px;
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  right: 160px;
+}
+.star{
+  width: 260px;
+  height:260px;
+  right:130px;
+  position: absolute;
+  top: 30px;
+}
+.jacket{
+  position: absolute;
+  top: 390px;
+  color: black;
+  right: 65px;
+}
+.products{
+  text-align: left;
+  margin-left: 100px;
+  color:#000000;
+  margin-top: 50px;
+  position: absolute;
+}
+.contenthr{
+  width: 210px;
+  height:2px;
+  background-color:black;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 98px;
+}
+.plus{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    margin-left: 79px;
+    margin-top: 88px;
+}
+.aside{
+  text-align: left;
+  margin-left: 100px;
+  color:#000000;
+  margin-top: 120px;
+  position: absolute;
+
+}
+.section{
+ margin-left: 250px;
+  position: absolute;
+  margin-top: 130px;
+  display: flex;
+  justify-content: center; 
+}
+.card {
+  width: 20%;
+  height: 35%; 
+  background-color: #f0f0f0;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+.footer{
+  margin-top: 650px;
+  background-color:rgb(41, 39, 39);
+  position: inherit;
+  height: 380px;
+  position: relative;
+  background-image: url("C:\Users\deepa\OneDrive\Desktop\React\assessment\public\bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.btnUser{
+  border-radius: 60%;
+  background-color: transparent;
+  padding: 20px;
+  border: 2px solid #007bff; 
+  color: #F07E15;
+  font-size: 30px;
+  border-color: #F07E15;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 260px;
+  right: 150px;
+}
+.input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+.label{
+  padding: 7px;
+}
+.newsfooter1{
+  position: absolute;
+  top:60px;
+  left: 80px;
+  color: white;
+}
+.newsfooter{
+  position: absolute;
+  top:100px;
+  left: 80px;
+  color: white;
+}
+.userinfo{
+  position: absolute;
+  top:80px;
+  right: 200px;
+  background-color: transparent;
+  
+}
+form{
+  color: white;
+}
+.foocon1{
+  position: absolute;
+  top: 140px;
+  left:75px;
+  font-size: 110px;
+  color: white;
+  font-weight: 800;
+  font-family: Syne;
+  line-height: 103px;
+  letter-spacing: 0em;
+}
+.foocon{
+  position: absolute;
+  top: 250px;
+  left:80px;
+  font-size: 110px;
+  font: stretch 40px;
+  color: white;
+  font-weight: 800;
+  font-family: Syne;
+  line-height: 103px;
+  letter-spacing: 0em;
+}
+.lastFooter{
+  position: absolute;
+  bottom:-40px;
+  color:white;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+.myStyle{
+  color: "white";
+  background-color: violet;
+  padding: 0px;
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+ };
+

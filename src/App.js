@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Home from './components/Home';
+import About from './components/About';
+import ContactUs from './components/ContactUs';
+import OurProducts from './components/OurProducts';
+import Login from './components/Login';
+import {BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
+setTimeout(()=>{
+   alert("Welcome  !  click home to visit the website");
+}, 3000)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Header/>
+      <Navbar/>
+      <Routes>
+           <Route exact path='/home' element={<Home/>} />
+           <Route exact path='/about' element={<About/>}/>
+           <Route exact path='/contactus' element={<ContactUs/>}/>
+           <Route exact path='/ourproducts' element={<OurProducts/>}/>  
+           <Route exact path='/login' element={<Login/>}/>
+      </Routes>
+    </Router>
+    </>
   );
 }
 
 export default App;
+
